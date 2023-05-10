@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <link rel="stylesheet" href="style.css">
+    <title>Classificador de triângulos</title>
+</head>
+
+<body>
+    <main id="App">
+        <div>
+            <h1>Classificador de Triângulos</h1>
+
+            <input type="number" placeholder="Digite o lado 1" v-model="Lado1" id="input1">
+            <br>
+            <input type="number" placeholder="Digite o lado 2" v-model="Lado2" id="input2">
+            <br>
+            <input type="number" placeholder="Digite o lado 3" v-model="Lado3" id="input3">
+            <br>
+            <button type="button" @click="classificar()">Classificar</button>
+
+
+            <p id="tela" v-model="tela">
+
+                {{tela}}
+            </p>
+        </div>
+    </main>
+
+    <script src="https://unpkg.com/vue@3/dist/vue.global.js"></script>
+    <script src="script.js"></script>
+</body>
+
+</html>
